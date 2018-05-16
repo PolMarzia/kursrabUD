@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расписание</title>
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+	<header class="main-header">
+		<div class="header-container">
+			<div class="header-title1">
+				<h1>Расписание</h1>
+			</div>
+			<div class="header-title2">
+				<h2>Выберите нужную опцию</h2>
+			</div>
+			<div class="buttons grid">
+				<div class="bt1">
+					<a href="#pre1">
+						<div class="button left">
+							<span>Я - студент</span>
+						</div>
+					</a>
+				</div>
+				<div class="bt2">
+					<a href="#pre1">
+						<div class="button right">
+							<a href="#pre1">Я - преподаватель</a>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<a name="pre1"></a>
+	<section class="form-section grid">
+		<div class="stud">
+			<img src={% static 'img/student.jpg' %} alt="student">
+		</div>
+		<div class="form-body">
+			<div class="form-title">
+				<h2>Введите необходимые данные</h2>
+			</div>
+			<div class="form-main">
+				<form action="">
+					<input type="text" placeholder="Sos"><br>
+					<input type="text" placeholder="Posos"><br>
+					<input type="text" placeholder="Otsos"><br>
+					<input type="submit" value="SOSAT'!!">
+				</form>
+			</div>
+		</div>
+		<div class="prep">
+			<img src={% static 'img/prepod.jpg' %} alt="teacher">
+		</div>
+	</section>
+	<footer class="main-footer">
+		<div class="footer-title">
+			<h1>Оставайтесь на связи!</h1>
+		</div>
+		<div class="hr-line"></div>
+		<div class="footer-comment">
+			<span>Все права сосут дрова!</span>
+		</div>
+	</footer>
+    <script src={% static 'js/jquery.js' %}></script>
+	<script src={% static 'js/script.js' %}></script>
+</body>
+</html>
