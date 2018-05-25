@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def main(request):
     return render(request, 'index.html', locals())
+
+def admin_page(request):
+    return render(request, 'admin_page.html', locals())
