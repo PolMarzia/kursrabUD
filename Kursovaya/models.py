@@ -73,10 +73,9 @@ class Uch_plan(models.Model):
     profil=models.CharField(max_length=20)
     srok_ob=models.IntegerField
     vidi_deyat=models.CharField(max_length=100)
-    progr_podg=models.CharField(max_length=100)
+    progr_podg=models.ForeignKey(Napravlenie, on_delete=models.CASCADE, default='')
     date_nach=models.DateField
     obr_std=models.CharField(max_length=20)
-    napr_podg_plan=models.ForeignKey(Napravlenie, on_delete=models.CASCADE, default='')
     def __str__(self):
         return self.id_uch
 

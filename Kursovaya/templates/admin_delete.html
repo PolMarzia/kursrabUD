@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расписание</title>
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+<div class="main-header">
+    <div class="header-container">
+        <div class="header-title1">
+            <div class="header-title1">
+             <form enctype="multipart/form-data"  action="" method="POST" class="">
+                {% csrf_token %}
+                <table style = "border: 1px solid black;" cellpadding="5" cellspacing="20" style="background: rgba(217, 196, 239, 0.85);">
+                   <p>А тут будет МЕСТО ДЛЯ ТВОЕЙ ХУЯКИ!!!</p>
+                </table>
+                <div>
+                    <input type="submit" value="Удалить" name="good" class="buttons button" >
+                    <input type="submit" value="Назад" name="back" class="buttons button">
+                </div>
+          </form>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+		<div class="footer-title">
+			<h1>Оставайтесь на связи!</h1>
+		</div>
+		<div class="hr-line"></div>
+		<div class="footer-comment">
+			<span>Все права щищ!</span>
+		</div>
+	</footer>
+</body>
+</html>

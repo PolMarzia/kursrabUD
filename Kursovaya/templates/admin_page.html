@@ -10,7 +10,19 @@
 <div class="main-header">
     <div class="header-container">
         <div class="header-title1">
-            <h1>(Тут короче будет админская страничка, но мне ща пиздец некогда этим заниматься, напишу чуть попозже короче вот)</h1>
+            <div class="admin-page-main">
+                <form enctype="multipart/form-data"  action="" method="POST" class="">
+                    {% csrf_token %}
+                        <table style = "border: none" cellpadding="5" cellspacing="20" style="background: rgba(217, 196, 239, 1);">
+                           <p>Тут будет список табличек</p>
+                        </table>
+                    </form>
+                    <div class="buttons-admin">
+                                    <input type="submit" value="Добавить" name="good" class="buttons-admin1 button" >
+                                    <input type="submit" value="Изменить" name="back" class="buttons-admin1 button">
+                                    <input type="submit" value="Удалить" name="back" class="buttons-admin1 button">
+                    </div>
+             </div>
         </div>
     </div>
 </div>

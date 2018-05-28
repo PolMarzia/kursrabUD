@@ -107,10 +107,12 @@ input[type = "submit"]{
 	width: 32vw;
 }
 .main-footer{
-    margin-top: -5px;
-	min-height: 20vh;
+   	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	background-color: #333333;
-	position: relative;
+
 }
 .footer-title{
     padding-top: 20px;
@@ -131,3 +133,30 @@ input[type = "submit"]{
 	color: white;
 }
 
+.form-for-table{
+	align-content: center;
+}
+
+.admin-page-main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.buttons-admin{
+	align-content: center;
+}
+
+.buttons-admin1{
+	text-align: center;
+    padding-top: 10px;
+	min-width: 250px;
+	min-height: 50px;
+	max-width: 250px;
+	max-height: 50px;
+	background-color: #ff9900;
+	font-size: 30px;
+	margin: auto;
+	border: 2px solid #352915;
+	border-radius: 10px;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
