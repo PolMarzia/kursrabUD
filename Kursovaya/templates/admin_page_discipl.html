@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расписание</title>
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+<div class="main-header">
+    <div class="header-container">
+        <div class="header-title1">
+        Сосатб
+            <div class="admin-page-main">
+            <table>
+            <thead>
+            </thead>
+               <tbody>
+                {% for Disciplina in Disciplina_list %}
+                    <tr>
+                        <td>{{ Disciplina.name_discipl }}</td>
+                    </tr>
+                {% endfor %}
+               </tbody>
+             </table>
+             </div>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+		<div class="footer-title">
+			<h1>Оставайтесь на связи!</h1>
+		</div>
+		<div class="hr-line"></div>
+		<div class="footer-comment">
+			<span>Все права щищ!</span>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расписание</title>
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+<div class="main-header">
+    <div class="header-container">
+        <div class="header-title1">
+            <div class="admin-page-main">
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_discipl" %}" >Дисциплины</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_prepod" %}" >Преподаватели</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_kampus" %}" >Кампусы</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_inst" %}" >Институты</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_kafedra" %}" >Кафедры</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_aud" %}" >Аудитории</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_forma_ob" %}" >Формы обучения</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_napravl" %}" >Направления</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_uchplan" %}" >Учебные планы</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_chasi" %}" >Часы</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_grouppa" %}" >Группы</a></button>
+                <button type="button" class="buttons-admin1"><a href="{% url "admin_page_data" %}" >Даты занятий</a></button>
+             </div>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+		<div class="footer-title">
+			<h1>Оставайтесь на связи!</h1>
+		</div>
+		<div class="hr-line"></div>
+		<div class="footer-comment">
+			<span>Все права щищ!</span>
+		</div>
+	</footer>
+</body>
+</html>

@@ -51,7 +51,7 @@ class Auditoria(models.Model):
     kampus_aud=models.ForeignKey(Kampus, on_delete=models.CASCADE, default='')
     mesta=models.IntegerField(default=0)
     def __str__(self):
-        return self.number_aud
+        return "{0}".format(self.number_aud)
 
 #Форма обучения
 class Forma_ob(models.Model):
@@ -77,7 +77,7 @@ class Uch_plan(models.Model):
     date_nach=models.DateField
     obr_std=models.CharField(max_length=20)
     def __str__(self):
-        return self.id_uch
+        return "{0}".format(self.id_uch)
 
 #Часы
 class Chasi(models.Model):
@@ -88,7 +88,7 @@ class Chasi(models.Model):
     kol_vo_chas=models.IntegerField
     discipl_chasi=models.ForeignKey(Napravlenie, on_delete=models.CASCADE, default='')
     def __str__(self):
-        return self.id_chasi
+        return "{0}".format(self.id_chasi)
 
 #Группа
 class Grouppa(models.Model):
@@ -105,8 +105,8 @@ class Grouppa(models.Model):
 #Дата занятия
 class Data(models.Model):
     id_data=models.AutoField(primary_key=models.ProtectedError)
-    chislo=models.DateField
+    chislo=models.DateField(blank=True)
     num_para=models.IntegerField(default=1)
     num_group=models.ForeignKey(Grouppa)
     def __str__(self):
-        return self.chislo
+        return "{0}".format(self.chislo)
